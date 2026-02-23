@@ -249,13 +249,13 @@
 <div class="nav-wrap">
   <div class="nav-inner">
     <div class="nav-tabs">
-      <button class="nav-tab active" onclick="showSection('peptides',this)">💉 Peptides</button>
+      <button class="nav-tab active" onclick="showSection('locaux',this)" style="color:var(--gold);position:relative">⚡ Stock Local</button>
+      <button class="nav-tab" onclick="showSection('peptides',this)">💉 Peptides</button>
       <button class="nav-tab" onclick="showSection('huiles',this)">🧪 Huiles CN</button>
       <button class="nav-tab" onclick="showSection('comprimes',this)">💊 Comprimés CN</button>
       <button class="nav-tab" onclick="showSection('inde-inj',this)">🇮🇳 Inde Injectables</button>
       <button class="nav-tab" onclick="showSection('inde-oraux',this)">🇮🇳 Inde Oraux</button>
       <button class="nav-tab" onclick="showSection('pharma',this)">🏥 Pharma Grade</button>
-      <button class="nav-tab" onclick="showSection('locaux',this)" style="color:var(--gold);position:relative">⚡ Stock Local</button>
     </div>
     <button class="cart-btn" onclick="toggleCart()">
       🛒 PANIER <span class="cart-count" id="cartCount">0</span>
@@ -272,7 +272,7 @@
   </div>
 
   <!-- ═══ PEPTIDES ═══ -->
-  <div class="section active" id="peptides">
+  <div class="section" id="peptides">
     <div class="section-header"><span class="section-icon">💉</span><span class="section-title">Peptides</span><span class="section-line"></span></div>
     <div class="origin-badge">🇨🇳 Origine : Chine &nbsp;|&nbsp; Prix par kit de 10 fioles</div>
     <div class="search-wrap"><input type="text" class="search-input" placeholder="Rechercher un peptide..." oninput="filterRows('pept-tbody',this.value)"></div>
@@ -480,7 +480,7 @@
   </div>
 
   <!-- ═══ STOCK LOCAL ═══ -->
-  <div class="section" id="locaux">
+  <div class="section active" id="locaux">
     <div class="section-header"><span class="section-icon">⚡</span><span class="section-title">Stock Local</span><span class="section-line"></span></div>
     <div style="display:flex;align-items:center;gap:12px;background:rgba(76,175,80,0.07);border:1px solid rgba(76,175,80,0.25);border-left:3px solid #4caf50;padding:14px 18px;margin-bottom:28px;font-size:13px;color:#a5d6a7;line-height:1.7">
       <span style="font-size:22px">🏠</span>
